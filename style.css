@@ -59,6 +59,7 @@ body {
     color: #1a1a1a;
     font-weight: 600;
     position: relative;
+    transition: 0.3s ease;
 }
 
 .navbar li a:hover,
@@ -67,12 +68,13 @@ body {
 }
 
 .navbar li a.active::after,
-.navbar li a.hover::after {
+.navbar li a:hover::after {
     content: "";
     width: 45%;          /* line ki length */
     height: 2px;
     background-color: #088178;
     position: absolute;
+    transition: 0.5s ease;
     bottom: -5px;
     left: 0.2rem;             /* line bilkul left se start hogi */
 }

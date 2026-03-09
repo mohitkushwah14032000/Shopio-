@@ -41,12 +41,30 @@ body {
     padding: 1.6rem 9%;
     background-color: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+
+}
+
+.logo i {
+    font-size: 3rem;
 }
 
 .navbar ul {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 3.6rem;
 }
 
 .navbar li {
@@ -55,7 +73,7 @@ body {
 
 .navbar li a {
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 1.20rem;
     color: #1a1a1a;
     font-weight: 600;
     position: relative;
@@ -70,11 +88,62 @@ body {
 .navbar li a.active::after,
 .navbar li a:hover::after {
     content: "";
-    width: 45%;          /* line ki length */
-    height: 2px;
+    width: 50%;
+    /* line ki length */
+    height: 2.5px;
     background-color: #088178;
     position: absolute;
     transition: 0.5s ease;
     bottom: -5px;
-    left: 0.2rem;             /* line bilkul left se start hogi */
+    left: 0.2rem;
+    /* line bilkul left se start hogi */
+}
+
+
+.hero{
+    background-image: url(img/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* text left side par */
+    justify-content: center;   /* vertical center */
+    
+}
+
+.hero h4{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    
+}
+
+.hero h2{
+    font-size: 4.5rem;
+    padding-bottom: 0.9rem;
+}
+
+.hero h1{
+    font-size: 2.6rem;
+    color: #088178;
+}
+
+.hero p{
+    font-size: 1.4rem;
+    margin: 1.1rem 0;
+}
+
+.hero button{
+    background-image: url("img/button.png");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 1rem 4.5rem 1.1rem 4.5rem;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }

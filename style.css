@@ -100,7 +100,7 @@ body {
 }
 
 
-.hero{
+.hero {
     background-image: url(img/hero4.png);
     height: 90vh;
     width: 100%;
@@ -109,33 +109,35 @@ body {
     padding: 0 11rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;   /* text left side par */
-    justify-content: center;   /* vertical center */
-    
+    align-items: flex-start;
+    /* text left side par */
+    justify-content: center;
+    /* vertical center */
+
 }
 
-.hero h4{
+.hero h4 {
     font-size: 2rem;
     padding-bottom: 0.9rem;
-    
+
 }
 
-.hero h2{
+.hero h2 {
     font-size: 4.5rem;
     padding-bottom: 0.9rem;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 2.6rem;
     color: #088178;
 }
 
-.hero p{
+.hero p {
     font-size: 1.4rem;
     margin: 1.1rem 0;
 }
 
-.hero button{
+.hero button {
     background-image: url("img/button.png");
     background-color: transparent;
     color: #088178;
@@ -147,3 +149,183 @@ body {
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+.feature {
+    padding: 3rem 9.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature .fe-box {
+    width: 15.8%;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: #fff;
+    border: 1px solid #cce7d0;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.feature .fe-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+.feature .fe-box img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.feature .fe-box h6 {
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.product-section {
+    text-align: center;
+    padding: 3rem 11rem;
+
+}
+
+.product-section .pro-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1.2rem;
+
+}
+
+.product-section h2 {
+    font-size: 3.5rem;
+    /* margin-top: 1rem; */
+}
+
+.product-section p {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.product-section .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 0.8rem 0.7rem;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 1rem 0;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.product-section .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.product-section .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.product-section .pro .des {
+    text-align: start;
+    padding: 0.9rem 0.1rem;
+}
+
+.product-section .pro .des span {
+    font-size: 1.3rem;
+    color: #606063;
+}
+
+.product-section .pro .des h5 {
+    font-size: 1.15rem;
+    padding-top: 0.6rem;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.product-section .pro .des i {
+    color: rgb(243, 181, 25);
+    font-size: 1rem;
+    padding-top: 0.7rem;
+}
+
+.product-section .pro .des h4 {
+    padding-top: 0.9rem;
+    font-size: 1.4rem;
+    color: #088178;
+}
+
+
+.product-section .pro .cart {
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    border-radius: 100%;
+    background-color: #81d5cb;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 22px;
+    right: 11px;
+    text-align: center;
+}
+
+.banner {
+    padding: 0 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(img/banner/b2.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    margin-bottom: 1.5rem;
+}
+
+.banner h4 {
+    color: white;
+    font-size: 2.2rem;
+    padding: 1.6rem 0rem;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.banner h2 span {
+    color: #ef3636;
+    font-size: 3.9rem;
+}
+
+.banner button {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.9rem 2.3rem;
+    border-radius: 35px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #088178;
+    color: white;
+}
+

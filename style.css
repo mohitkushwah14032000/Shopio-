@@ -47,6 +47,13 @@ body {
     font-size: 3rem;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.1rem;
+}
+
 .navbar ul {
     display: flex;
     align-items: center;
@@ -75,16 +82,19 @@ body {
 .navbar li a:hover::after {
     content: "";
     width: 50%;
-    /* line ki length */
+    
     height: 2.5px;
     background-color: #088178;
     position: absolute;
     transition: 0.5s ease;
     bottom: -5px;
     left: 0.2rem;
-    /* line bilkul left se start hogi */
+    
 }
 
+.burgermenu {
+    display: none;
+}
 
 .hero {
     background-image: url(img/hero4.png);
@@ -605,9 +615,4 @@ body {
     margin-top: 20px;
     border-top: 1px solid #ccc;
     padding: 1.8rem;
-}
-
-
-@media (max-width: 1200px) {
-
 }

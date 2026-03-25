@@ -13,21 +13,7 @@
 
 html {
     font-size: 90%;
-    /* overflow-x: hidden; */
-    /* scroll-behavior: smooth; */
-    /* scroll-padding-top: 9rem; */
 
-    /* &::-webkit-scrollbar {
-        width: 1rem;
-    } */
-
-    /* &::-webkit-scrollbar-track {
-        background-color: rgb(133, 133, 138);
-    } */
-
-    /* &::-webkit-scrollbar-thumb {
-        background-color: whitesmoke;
-    } */
 }
 
 body {
@@ -589,8 +575,8 @@ body {
 }
 
 .footer .follow i:hover,
-.footer a:hover{
-color: #088178;
+.footer a:hover {
+    color: #088178;
 }
 
 .footer .install p {
@@ -619,4 +605,9 @@ color: #088178;
     margin-top: 20px;
     border-top: 1px solid #ccc;
     padding: 1.8rem;
+}
+
+
+@media (max-width: 1200px) {
+
 }
